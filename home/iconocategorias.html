@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+@media (min-width: 720px){
+    .parent {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    }
+    .div1 { grid-area: 1 / 1 / 2 / 2;     border: 1px solid black;}
+    .div2 { grid-area: 1 / 2 / 2 / 3;     border: 1px solid black;}
+    .div3 { grid-area: 1 / 3 / 2 / 4;     border: 1px solid black;}
+    .div4 { grid-area: 1 / 4 / 2 / 5;    border: 1px solid black; }
+    .div5 { grid-area: 1 / 5 / 2 / 6;    border: 1px solid black; }
+    .div6 { grid-area: 1 / 6 / 2 / 7;     border: 1px solid black;}
+    .div7 { grid-area: 1 / 7 / 2 / 8;     border: 1px solid black;}
+    .div8 { grid-area: 2 / 1 / 3 / 2;     border: 1px solid black;}
+    .div9 { grid-area: 2 / 2 / 3 / 3;     border: 1px solid black;}
+    .div10 { grid-area: 2 / 3 / 3 / 4;    border: 1px solid black; }
+    .div11 { grid-area: 2 / 4 / 3 / 5;     border: 1px solid black;}
+    .div12 { grid-area: 2 / 5 / 3 / 6;     border: 1px solid black;}
+    .div13 { grid-area: 2 / 6 / 3 / 7;     border: 1px solid black;}
+    .div14 { grid-area: 2 / 7 / 3 / 8;     border: 1px solid black;}
+    .div15 { display: none; }
+}
+@media (max-width: 720px){
+    .parent {
+        height: 100%;
+    text-align: center;
+    }
+    .div1 { grid-area: 1 / 1 / 2 / 2;     border: 1px solid black;}
+    .div2 { grid-area: 1 / 2 / 2 / 3;     border: 1px solid black;}
+    .div3 { grid-area: 1 / 3 / 2 / 4;     border: 1px solid black;}
+    .div4 { grid-area: 1 / 4 / 2 / 5;     border: 1px solid black;}
+    .div5 { display: none; }
+    .div6 {display: none; }
+    .div7 { display: none; }
+    .div8 { display: none; }
+    .div9 { display: none; }
+    .div10 { display: none; }
+    .div11 { display: none; }
+    .div12 { display: none; }
+    .div13 { display: none; }
+    .div14 { display: none; }
+    .div15 { grid-area: 1 / 5 / 2 / 6;     justify-content: center;
+    align-items: center;}
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1"> <img src="Group 7.png" alt=""></div>
+        <div class="div2"> <img src="Group 7.png" alt=""></div>
+        <div class="div3"> <img src="Group 7.png" alt=""></div>
+        <div class="div4"> <img src="Group 7.png" alt=""></div>
+        <div class="div5"> <img src="Group 7.png" alt=""></div>
+        <div class="div6"> <img src="Group 7.png" alt=""></div>
+        <div class="div7"> <img src="Group 7.png" alt=""></div>
+        <div class="div8"> <img src="Group 7.png" alt=""></div>
+        <div class="div9"> <img src="Group 7.png" alt=""></div>
+        <div class="div10"> <img src="Group 7.png" alt=""></div>
+        <div class="div11"> <img src="Group 7.png" alt=""></div>
+        <div class="div12"> <img src="Group 7.png" alt=""></div>
+        <div class="div13"> <img src="Group 7.png" alt=""></div>
+        <div class="div14"> <img src="Group 7.png" alt=""></div>
+        <div class="div15"> <a href=""><p>Ver más categorías</p></a></div>
+        </div>
+</body>
+</html>
