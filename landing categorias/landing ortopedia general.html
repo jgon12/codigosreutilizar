@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style><!--
+        .container-or{
+        background: #f3f3f3;
+        padding-bottom: 10px;
+        }
+        
+        .brsd{
+        display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #cbcbcb;
+            margin: 1em 0;
+            padding: 0;
+        }
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;}
+        .test-classs{
+        position: static;
+        }
+                    #container{
+                      width:70% !important ;
+                    }
+        
+        .transicion-cards .card{
+        height: 280px;
+        }
+        .panel-heading{
+         display: none
+        }
+        
+        .transicion-cards .card:hover .background-gradient:after {
+            background: rgb(255 225 154 / 39%);
+        }
+              .page-transition h2.background{
+                display: none
+              }
+                      div.titulo-acor:hover {
+                      background: hsl(0, 0%, 97%);
+                    }
+                    p.informacion-acor:hover {
+                      background: rgb(205, 248, 255);
+                    }
+              #container { 
+                      width: 70%; 
+                      background: #FFFFFF; 
+                      margin: 0 auto; 
+                      border: 1px solid #f5f5f5; 
+                      text-align: left; 
+        
+                  } 
+                  #sidebar { 
+                      float: left; 
+                      width: 220px; 
+                      padding: 15px 10px 15px 20px; 
+                  } 
+                  #mainContent { 
+                      margin: 0 200px 0 200px;
+                      padding: 0 20px 20px 20px; 
+                    }
+                  @media (max-width: 800px){
+                    #container{
+                      width:100% !important ;
+                    }
+                .rowsas{
+        display: none;
+        }
+                    #sidebar{
+                      display: none;
+                    }
+                    #mainContent{
+                      margin:0px;
+                    }
+                    div.seccion-acor{
+                      display: none;
+                    }
+                    }
+                    div.titulo-acor{
+                     width:100%;
+                      height:40px;
+                      overflow: hidden;
+                      border-bottom: 1px solid #bebebe;
+                      
+                    }
+                    p.titulo-acor{
+                    margin:13px;
+                    color: #3f3f3f;
+                    }
+                    
+                    div.informacion-acor{
+                    width:100%;
+                    height:0px;
+                    background-color: #ffffff;
+                    overflow: hidden;
+                    transition: 2s;
+                    -webkit-transiton: height 2s;
+                    }
+                    
+                    p.informacion-acor{
+                    color:#4f4f4f;
+                    padding-left: 10px;
+                    }
+                    
+                    div.seccion-acor:hover div.informacion-acor{
+                    height:100%;
+                    }
+                    
+                    .detalles-acor{
+                    float:right;
+                    padding: 5px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    background-color: #cfcfcf;
+                    color: white;
+                    }
+                    
+                    a.detalles-acor{
+                    text-decoration: none;
+                    }
+                    
+                    .cruz-acor{
+                    float:right; 
+                    margin-right:10px;
+                    }
+                    
+                    .detalles-acor:hover{
+                    background-color: #7CBA3D;
+                    }
+                    
+                    .imginformacion-acor{
+                    float:left;
+                    margin: 10px;
+                    }
+                    
+                    .marca-acor{
+                    clear: both;
+                    height:2px;
+                    width: 100%;
+                    background-color: #cccccc;
+                      
+                    }
+                    div.informacion-acor{
+                    width:100%;
+                    height:0px;
+                    background-color: #ffffff;
+                    overflow: hidden;
+                    transition: 2s;
+                    -webkit-transiton: height 2s;
+                    }
+                    
+                    p.informacion-acor{
+                    color:#4f4f4f;
+                    }
+                    
+                    div.seccion-acor:hover div.informacion-acor{
+                    height:100%;
+                    } 
+                    a.informacion-acor-a{
+                      text-decoration: none;
+                     }
+              
+                    #titulo-acor-a{
+                      padding: 5px;
+                      color: #e21c79;
+                    }
+                    .banner{
+              height: 400px;
+              position: relative;
+              background: #2dccd2bf;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .banner__img{
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              opacity: 0.2;
+          }
+          
+          .banner__info{
+              padding:0 3em;
+              position: absolute;
+              width: 100%;
+              max-width: 700px;
+              text-align: center;
+              color: #fff;
+              margin: auto;
+          }
+          .banner__title{
+              line-height: 1.5;
+              font-size: 2.5em;
+          }
+          
+          .banner__p{
+              line-height: 2;
+              font-size: 0.9em;
+              opacity: 0.9;
+              margin-top: 1em;
+          }
+          background text-center{
+            display: none !important;
+          }
+        
+        
+                  
+        --></style>
+            <section class="banner">
+                <img class="banner__img"   src="{{media url="wysiwyg/vet/Hero_banner_landings_1_.jpg"}}">
+                <div class="banner__info">
+                    <h1 class="banner__title">Artículos para el tratamiento o prevención de lesiones</h1>
+                    <p class="banner__p">Estas en el lugar indicado, encuentra todo en especial para la prevención y tratamiento de afecciones músculo-esqueléticas ortopédicas tanto pediátrica además para adultos.</p>
+                </div>
+            </section>
+             <div class="widget-banner container "> 
+             <div class="row "> 
+          <h2 style="color: #767676;"><span><span>Categorías destacadas</span></span></h2>
+          <hr class="brsd"/>
+          </div></div>
+           {{widget type="widgetcategories/widgetcategorias" category_ids="500, 501, 503, 445, 505, 504, 444, 484" template="page/widget/categories/precategories.phtml"}}
+        
+        
+        {{widget type="widgetbanner/dosbanners" path1="media/wysiwyg/vet/BANNERS_ORTOPEDIA_1_.png" img_alt1="Ortopedia del pie" class_image1="BannerCard-module_card__32Bf-" link1="ortopedia-general/ortopedia-del-pie.html" path2="media/wysiwyg/vet/BANNERS_ORTOPEDIA_2_.png" img_alt2="Prevención y rehabilitación" class_image2="BannerCard-module_card__32Bf-" link2="ortopedia-general/prevencion-y-rehabilitacion.html" template="page/widget/banner/dosbanners.phtml"}}
+         <div class="container-or"> 
+             <div class="widget-banner container "> 
+             <div class="row "> 
+          <h2 style="color: #767676;"><span><span>Productos destacados</span></span></h2>
+          <hr class="brsd"/>
+          </div>
+          </div>
+         <div class="container-or"> 
+          {{widget type="widgettabs/mitotabs" container_class="test-classs" tab_id="ofertas" tipo_despliegue="carrusel" category_ids="443" num_columnas="5" limite_productos="6" template="page/widget/tabs-destacados/tabs.phtml"}}
+          {{widget type="widgettabs/mitotabs" container_class="test-classs" tab_id="ofertas" tipo_despliegue="carrusel" category_ids="500" num_columnas="5" limite_productos="6" template="page/widget/tabs-destacados/tabs.phtml"}}
+         </div>  </div>
+        
+        {{widget type="widgetbanner/dosbanners" path1="media/wysiwyg/vet/BANNERS_ORTOPEDIA_3_.png" img_alt1="ortopedia infantil" class_image1="BannerCard-module_card__32Bf-" link1="ortopedia-general/ortopedia-infantil.html" path2="media/wysiwyg/vet/BANNERS_ORTOPEDIA_4_.png" img_alt2="prevencion de lesiones" class_image2="BannerCard-module_card__32Bf-" link2="ortopedia-general/ortopedia-deportiva/prevencion-de-lesiones.html" template="page/widget/banner/dosbanners.phtml"}}
+        
+</body>
+</html>
