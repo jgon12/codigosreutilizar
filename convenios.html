@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style><!--
+    .div-li-btn{list-style:none; font-size:12px;}
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+     @media (min-width: 800px){
+    .col-lg-5ths{
+    width: 25%;
+    }
+    .banner {height: 300px;}
+    }
+     @media (max-width: 800px){
+    .banner {height: 200px;}
+    .asdas{display:none}
+    .div-movil-novi{display:none}
+    .banner__title{font-size: 1.4em !important;}
+    .banner__p{font-size: 0.8em !important;}
+    }
+    .container-or{
+    background: #f3f3f3;
+    padding-bottom: 10px;
+    }
+    
+    .brsd{
+    display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #cbcbcb;
+        margin: 1em 0;
+        padding: 0;
+    }
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;}
+    .test-classs{
+    position: static;
+    }
+                #container{
+                  width:70% !important ;
+                }
+    
+    .transicion-cards .card{
+    height: 100% !important;
+    margin-top: 0px !important;
+    }
+    .panel-heading{
+     display: none
+    }
+    
+    .transicion-cards .card:hover .background-gradient:after {
+        background: rgb(255 225 154 / 39%);
+    }
+          .page-transition h2.background{
+            display: none
+          }
+                  div.titulo-acor:hover {
+                  background: hsl(0, 0%, 97%);
+                }
+                p.informacion-acor:hover {
+                  background: rgb(205, 248, 255);
+                }
+          #container { 
+                  width: 70%; 
+                  background: #FFFFFF; 
+                  margin: 0 auto; 
+                  border: 1px solid #f5f5f5; 
+                  text-align: left; 
+    
+              } 
+              #sidebar { 
+                  float: left; 
+                  width: 220px; 
+                  padding: 15px 10px 15px 20px; 
+              } 
+              #mainContent { 
+                  margin: 0 200px 0 200px;
+                  padding: 0 20px 20px 20px; 
+                }
+              @media (max-width: 800px){
+                #container{
+                  width:100% !important ;
+                }
+     .banner{
+          height: 300px;}
+    }
+            .rowsas{
+    display: none;
+    }
+                #sidebar{
+                  display: none;
+                }
+                #mainContent{
+                  margin:0px;
+                }
+                div.seccion-acor{
+                  display: none;
+                }
+                div.titulo-acor{
+                 width:100%;
+                  height:40px;
+                  overflow: hidden;
+                  border-bottom: 1px solid #bebebe;
+                  
+                }
+                p.titulo-acor{
+                margin:13px;
+                color: #3f3f3f;
+                }
+                
+                div.informacion-acor{
+                width:100%;
+                height:0px;
+                background-color: #ffffff;
+                overflow: hidden;
+                transition: 2s;
+                -webkit-transiton: height 2s;
+                }
+                
+                p.informacion-acor{
+                color:#4f4f4f;
+                padding-left: 10px;
+                }
+                
+                div.seccion-acor:hover div.informacion-acor{
+                height:100%;
+                }
+                
+                .detalles-acor{
+                float:right;
+                padding: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: #cfcfcf;
+                color: white;
+                }
+                
+                a.detalles-acor{
+                text-decoration: none;
+                }
+                
+                .cruz-acor{
+                float:right; 
+                margin-right:10px;
+                }
+                
+                .detalles-acor:hover{
+                background-color: #7CBA3D;
+                }
+                
+                .imginformacion-acor{
+                float:left;
+                margin: 10px;
+                }
+                
+                .marca-acor{
+                clear: both;
+                height:2px;
+                width: 100%;
+                background-color: #cccccc;
+                  
+                }
+                div.informacion-acor{
+                width:100%;
+                height:0px;
+                background-color: #ffffff;
+                overflow: hidden;
+                transition: 2s;
+                -webkit-transiton: height 2s;
+                }
+                
+                p.informacion-acor{
+                color:#4f4f4f;
+                }
+                
+                div.seccion-acor:hover div.informacion-acor{
+                height:100%;
+                } 
+                a.informacion-acor-a{
+                  text-decoration: none;
+                 }
+          
+                #titulo-acor-a{
+                  padding: 5px;
+                  color: #e21c79;
+                }
+                .banner{
+          position: relative;
+          background: #2dccd2bf;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .banner__img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          opacity: 0.9;
+      }
+      
+      .banner__info{
+          padding:0 3em;
+          position: absolute;
+          width: 100%;
+          max-width: 700px;
+          text-align: center;
+          color: #fff;
+          margin: auto;
+      }
+      .banner__title{
+          line-height: 1.5;
+          font-size: 1.5em;
+      }
+      
+      .banner__p{
+          line-height: 2;
+          font-size: 0.9em;
+          opacity: 0.9;
+          margin-top: 1em;
+      }
+      background text-center{
+        display: none !important;
+      }
+    
+              
+    --></style>
+        <section class="banner">
+            <img class="banner__img"   src="{{media url="wysiwyg/convenios/Banner_grande_-_convenios.png"}}" >
+    
+    
+        </section>
+    
+        <div class="widget-banner container"><div class="row">
+            <div class="block-title text-center title carousel-title asdas" style="margin-bottom: -15px;background: #ffffff;padding: 0;"><h2><span style="background: #ffffff;">descubre las promociones y descuentos exclusivos de este año</span></h2></div>
+    
+    <div class="mainsd">
+      <ul class="cards">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img class="imgsdf" src="media/wysiwyg/convenios/1.png"></div>
+            <div class="card_content">
+    <nav>
+        <ul style="padding: 0px;">
+            <li class="div-li-btn"><button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+            <li class="div-li-btn"><button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+    
+        </ul>
+    </nav>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img class="imgsdf"src="media/wysiwyg/convenios/2_1.png"></div>
+            <div class="card_content">
+    <button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img  class="imgsdf" src="media/wysiwyg/convenios/3.png"></div>
+            <div class="card_content">
+    <nav>
+        <ul style="padding: 0px;">
+            <li class="div-li-btn"><button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+            <li class="div-li-btn"><button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+    
+        </ul>
+    </nav>
+            </div>
+          </div>
+        </li>
+    
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img class="imgsdf" src="/media/wysiwyg/convenios/4.png"></div>
+            <div class="card_content">
+    <button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img  class="imgsdf" src="media/wysiwyg/convenios/5.png"></div>
+            <div class="card_content">
+    <button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img class="imgsdf"src="media/wysiwyg/convenios/6.png"></div>
+            <div class="card_content">
+    <button class="btn card_btn" onclick="location.href='http://www.example.com'">Ver Más Información</button>
+            </div>
+          </div>
+        </li>    
+        
+        
+      </ul>
+    </div>
+            <style>
+    /* Font */
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+    
+    .mainsd{
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    
+    .imgsdf {
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+      padding: 0px !important;
+    }
+    
+    .btn {
+      color: #ffffff;
+      padding: 0.8rem;
+      font-size: 10px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent;
+    }
+    
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+    }
+    
+    @media (min-width: 40rem) {
+      .cards_item {
+        width: 50%;
+      }
+    }
+    
+    @media (min-width: 56rem) {
+      .cards_item {
+        width: 33.3333%;
+      }
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 0.25rem;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 90% !important;
+      border-radius: 11px;
+    }
+    
+    .card_content {
+      padding: 1rem;
+      padding-bottom: 20px;
+      background: linear-gradient(to bottom left, #2dccd3 40%, #2dccd363 100%);
+    }
+    
+    .card_title {
+      color: #ffffff;
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin: 0px;
+    }
+    
+    .card_text {
+      color: #ffffff;
+      font-size: 1.2 rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;    
+      font-weight: 400;
+    }
+    .made_by{
+      font-weight: 400;
+      font-size: 13px;
+      margin-top: 35px;
+      text-align: center;
+    }
+            </style>
+    <div class="div-movil-novi">
+    {{widget type="widgetbanner/dosbanners" path1="media/wysiwyg/convenios/Banners_secundarios_-_convenios_1_.png" img_alt1="Toma presión" class_image1="BannerCard-module_card__32Bf-" link1="diagnostico/toma-presion.html" path2="media/wysiwyg/convenios/Banners_secundarios_-_convenios.png" img_alt2="Glicemia" class_image2="BannerCard-module_card__32Bf-" link2="diagnostico/glicemia.html" template="page/widget/banner/dosbanners.phtml"}}
+    </div>
+</body>
+</html>
